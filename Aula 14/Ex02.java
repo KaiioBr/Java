@@ -1,0 +1,13 @@
+public class Ex02 {
+    public static void main(String[] args) {
+        int[] numeros={10,20,30};
+        try {
+            System.out.println(numeros[5]);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Error: Indice fora dos limites do array.");
+        }
+        finally {
+            System.out.println("Operacao finalizada.");
+        }
+    }
+}
